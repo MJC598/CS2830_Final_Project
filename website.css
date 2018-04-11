@@ -1,0 +1,22 @@
+body.home{
+    background-color: midnightblue;
+    color: navajowhite;
+}
+
+div.header{
+    position: -webkit-sticky;
+    position: -mozilla-sticky;
+    
+}
+
+div.content{
+    
+}
+
+a.nav-bar{
+    
+}
+
+a.nav-bar:hover{
+    
+}
