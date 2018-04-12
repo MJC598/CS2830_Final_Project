@@ -1,10 +1,18 @@
 body{
-    background-image: url("pictures/BWcodescreen.jpg");
+    background: linear-gradient(rgba(256,256,256,0.15), rgba(256,256,256,0.15)), url("pictures/BWcodescreen.jpg");
 /*
     width: 100%;
     height: 100%;
 */
     color: #bebebe;
+}
+
+.fullPage{
+    background-color: rgba(248, 247, 216, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 div.header{
