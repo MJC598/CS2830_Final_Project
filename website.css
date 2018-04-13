@@ -1,6 +1,11 @@
 body{
     background: linear-gradient(rgba(256, 256, 256, 0.15), rgba(256, 256, 256, 0.15)), url("pictures/BWtiger.jpg");
     background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
 /*
     width: 100%;
     height: 100%;
@@ -23,20 +28,21 @@ div.header{
 
 div.content{
 /*    background-image: url("pictures/BWcodescreen.jpg");*/
+    font-family: 'Lato', sans-serif;
 }
 
 nav.nav-bar{
-    font-family: 'Playfair Display', serif;
+/*    font-family: 'Playfair Display', serif;*/
+    font-family: 'Slabo 27px', serif;
+    font-size: 1.25em;
     background-color: black;
+    box-shadow: 5px 0px 20px #202020;
     position: absolute;
-    width: 75%;
-    height: 5em;
-    right: 0px;
-    top: 0px;
-    border-bottom: 5px solid black;
-    border-right: 5px solid black;
-    border-left: 5px solid black;
-    border-radius: 0px 0px 8px 8px;
+    width: 100%;
+    height: 4em;
+    top: 0;
+    left: 0;
+/*    border-radius: 0px 0px 10px 10px;*/
 /*    justify-content: center;*/
 /*    align-content: center;*/
 /*    margin-right: -8px;*/
@@ -48,5 +54,20 @@ a.nav-bar{
 }
 
 a.nav-bar:hover{
-    
+    color: white;
+    font-weight: bold;
+}
+
+div.content{
+    height: 1000px;
+}
+
+div.footer{
+    font-family: 'Slabo 27px', serif;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    height: 4em;
+    bottom: 0;
+    left: 0;
 }
