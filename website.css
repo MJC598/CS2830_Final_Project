@@ -78,10 +78,22 @@ div.text{
 }
 
 div.first{
-    border-bottom: 2px solid black;
-    background-color: #bebebe;
+/*    border-bottom: 2px solid black;*/
+    background-color: #edeeef;
     bottom: 40%;
 }
+
+/*
+#triangle-topright {
+	width: 100%;
+	height: 3
+	border-top: 100px solid #bebebe;
+	border-left: 100px solid transparent;
+    bottom: 30%;
+    z-index: 3;
+
+}
+*/
 
 div.second{
     background-color: #dddddd;
@@ -89,7 +101,7 @@ div.second{
 }
 
 div.third{
-    border-top: 2px solid black;
+/*    border-top: 2px solid black;*/
     background-color: #bebebe;
     bottom: 0;
 }
