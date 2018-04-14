@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(rgba(256, 256, 256, 0.15), rgba(256, 256, 256, 0.15)), url("pictures/BWtiger.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("pictures/BWtiger.jpg");
     background-size: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -13,12 +13,11 @@ body{
     color: #bebebe;
 }
 
+/*
 .fullPage{
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    padding: 0;
 }
+*/
 
 div.header{
     position: -webkit-sticky;
@@ -29,14 +28,19 @@ div.header{
 div.content{
 /*    background-image: url("pictures/BWcodescreen.jpg");*/
     font-family: 'Lato', sans-serif;
+    position: relative;
+    margin: 0;
+    
 }
 
 nav.nav-bar{
 /*    font-family: 'Playfair Display', serif;*/
     font-family: 'Slabo 27px', serif;
     font-size: 1.25em;
+/*
     background-color: black;
     box-shadow: 5px 0px 20px #202020;
+*/
     position: absolute;
     width: 100%;
     height: 4em;
@@ -58,15 +62,54 @@ a.nav-bar:hover{
     font-weight: bold;
 }
 
+/*
 div.content{
     height: 1000px;
 }
+*/
 
-div.footer{
-    font-family: 'Slabo 27px', serif;
-    background-color: black;
-    width: 100%;
+div.text{
     position: absolute;
+    right: 0;
+    width: 100%;
+    height: 20%;
+    color: black;
+    margin-bottom: -25px;
+}
+
+div.first{
+    border-bottom: 2px solid black;
+    background-color: #bebebe;
+    bottom: 40%;
+}
+
+div.second{
+    background-color: #dddddd;
+    bottom: 20%;
+}
+
+div.third{
+    border-top: 2px solid black;
+    background-color: #bebebe;
+    bottom: 0;
+}
+
+/*
+div.fullPage{
+    margin: 0, 0, 0, 0;
+    position: relative;
+    height: 100%; 
+}
+*/
+
+footer.footer{
+    clear: both;
+    font-family: 'Slabo 27px', serif;
+    font-size: 1.25em;
+    background-color: black;    
+    box-shadow: 5px 0px 20px #202020;
+    margin-left: -8px;
+    position: relative;
     height: 4em;
     bottom: 0;
     left: 0;
