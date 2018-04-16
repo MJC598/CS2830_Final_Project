@@ -6,18 +6,8 @@ body{
     background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
-/*
-    width: 100%;
-    height: 100%;
-*/
     color: #bebebe;
 }
-
-/*
-.fullPage{
-    padding: 0;
-}
-*/
 
 div.header{
     position: -webkit-sticky;
@@ -26,7 +16,6 @@ div.header{
 }
 
 div.content{
-/*    background-image: url("pictures/BWcodescreen.jpg");*/
     font-family: 'Lato', sans-serif;
     position: relative;
     margin: 0;
@@ -34,22 +23,19 @@ div.content{
 }
 
 nav.nav-bar{
-/*    font-family: 'Playfair Display', serif;*/
+/*    display: inline-block;*/
+    text-align: right;
     font-family: 'Slabo 27px', serif;
     font-size: 1.25em;
-/*
-    background-color: black;
-    box-shadow: 5px 0px 20px #202020;
-*/
-    position: absolute;
-    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    /*This next font is for testing */
+/*    font-size: 2em;*/
+    /*THIS MESSES UP LINK USABILITY*/
+/*    position: absolute;*/
     height: 4em;
     top: 0;
     left: 0;
-/*    border-radius: 0px 0px 10px 10px;*/
-/*    justify-content: center;*/
-/*    align-content: center;*/
-/*    margin-right: -8px;*/
 }
 
 a.nav-bar{
@@ -57,10 +43,23 @@ a.nav-bar{
     color: #bebebe;
 }
 
-a.nav-bar:hover{
+/*
+#item1:hover{
     color: white;
-    font-weight: bold;
 }
+
+#item2:hover{
+    color: white;
+}
+
+#item3:hover{
+    color: white;
+}
+
+#item4:hover{
+    color: white;
+}
+*/
 
 /*
 div.content{
@@ -68,17 +67,20 @@ div.content{
 }
 */
 
+/*
 div.text{
     position: absolute;
     right: 0;
     width: 100%;
-    height: 20%;
+    height: 15%;
     color: black;
     margin-bottom: -25px;
 }
 
+*/
+/*
 div.first{
-/*    border-bottom: 2px solid black;*/
+    border-bottom: 2px solid black;
     background-color: #edeeef;
     bottom: 40%;
 }
@@ -91,16 +93,23 @@ div.first{
     bottom: 40%;
 }
 
+*/
+/*
 div.second{
-    background-color: #dddddd;
+    background-color: transparent;
     bottom: 20%;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    margin-bottom: -25px;
 }
 
 div.third{
-/*    border-top: 2px solid black;*/
-    background-color: #bebebe;
+    border-top: 2px solid black;
+    background-color: #edeeef;
     bottom: 0;
 }
+*/
 
 /*
 div.fullPage{
@@ -110,6 +119,7 @@ div.fullPage{
 }
 */
 
+/*
 footer.footer{
     clear: both;
     font-family: 'Slabo 27px', serif;
@@ -122,3 +132,4 @@ footer.footer{
     bottom: 0;
     left: 0;
 }
+*/
