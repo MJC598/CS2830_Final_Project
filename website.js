@@ -1,6 +1,6 @@
 $(document).ready(function(){
     //This is done so that it scales the picture correctly to the phone
-    $(".content").css("height", .87*$(window).height());
+    $("div.content").css("height", .87*$(window).height());
     $(".footer").css("width", $(window).width());
 });
 

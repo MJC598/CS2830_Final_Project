@@ -16,10 +16,21 @@ div.header{
 }
 
 div.content{
+    display: flex;
+    align-items: center;
     font-family: 'Lato', sans-serif;
+    color: #edeeef;
     position: relative;
     margin: 0;
+    bottom: 0;
     
+}
+
+span.words{
+    font-size: 2em;
+    margin: auto;
+    text-align: center;
+    bottom: 0;
 }
 
 nav.nav-bar{
@@ -43,93 +54,6 @@ a.nav-bar{
     color: #bebebe;
 }
 
-/*
-#item1:hover{
-    color: white;
+#item1, #item2, #item3, #item4{
+    padding-right: 5px;
 }
-
-#item2:hover{
-    color: white;
-}
-
-#item3:hover{
-    color: white;
-}
-
-#item4:hover{
-    color: white;
-}
-*/
-
-/*
-div.content{
-    height: 1000px;
-}
-*/
-
-/*
-div.text{
-    position: absolute;
-    right: 0;
-    width: 100%;
-    height: 15%;
-    color: black;
-    margin-bottom: -25px;
-}
-
-*/
-/*
-div.first{
-    border-bottom: 2px solid black;
-    background-color: #edeeef;
-    bottom: 40%;
-}
-
-#triangle-topright {
-	width: 0;
-	height: 0;
-	border-top: 400px solid #002b14;
-	border-left: 400px solid transparent;
-    bottom: 40%;
-}
-
-*/
-/*
-div.second{
-    background-color: transparent;
-    bottom: 20%;
-    position: absolute;
-    right: 0;
-    width: 100%;
-    margin-bottom: -25px;
-}
-
-div.third{
-    border-top: 2px solid black;
-    background-color: #edeeef;
-    bottom: 0;
-}
-*/
-
-/*
-div.fullPage{
-    margin: 0, 0, 0, 0;
-    position: relative;
-    height: 100%; 
-}
-*/
-
-/*
-footer.footer{
-    clear: both;
-    font-family: 'Slabo 27px', serif;
-    font-size: 1.25em;
-    background-color: black;    
-    box-shadow: 5px 0px 20px #202020;
-    margin-left: -8px;
-    position: relative;
-    height: 4em;
-    bottom: 0;
-    left: 0;
-}
-*/
