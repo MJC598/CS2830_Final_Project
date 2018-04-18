@@ -8,33 +8,20 @@ body{
     background-size: cover;
     color: #bebebe;
 }
-
-div.header{
-    position: -webkit-sticky;
-    position: -mozilla-sticky;
-    
-}
-
-div.content{
-    display: flex;
-    align-items: center;
-    font-family: 'Lato', sans-serif;
-    color: #edeeef;
-    position: relative;
-    margin: 0;
-    bottom: 0;
-    
-}
-
-span.words{
-    font-size: 2em;
-    margin: auto;
-    text-align: center;
-    bottom: 0;
+ 
+div.header-left{
+    display: inline;
+    float: left;
+    font-size: 1.25em;
+    font-family: 'Slabo 27px', serif;
+    color: #bebebe;
 }
 
 nav.nav-bar{
 /*    display: inline-block;*/
+/*    display: block;*/
+    display: inline;
+    float: right;
     text-align: right;
     font-family: 'Slabo 27px', serif;
     font-size: 1.25em;
@@ -50,10 +37,34 @@ nav.nav-bar{
 }
 
 a.nav-bar{
+/*    text-align: right;*/
     text-decoration: none;
     color: #bebebe;
 }
 
 #item1, #item2, #item3, #item4{
     padding-right: 5px;
+}
+
+div.clear{
+    clear: both;
+}
+
+div.content{
+    display: flex;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 3px 3px 5px #002a12;
+    color: #edeeef;
+    position: relative;
+    margin: 0;
+    bottom: 0;
+    
+}
+
+span.words{
+    font-size: 2em;
+    margin: auto;
+    text-align: center;
+    bottom: 0;
 }
