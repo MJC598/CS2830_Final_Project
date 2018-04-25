@@ -1,3 +1,4 @@
+/*General CSS*/
 body{
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("pictures/BWgreenTiger.jpg");
     background-size: 100%;
@@ -72,7 +73,7 @@ div.stuff{
     margin: auto;
 }
 
-span.words{
+.words{
     padding-top: 3px;
     padding-bottom: 3px;
     padding-left: 2%;
@@ -81,4 +82,9 @@ span.words{
     margin: auto;
     text-align: center;
     bottom: 0;
+}
+
+/*Contact page css*/
+input.subject{
+    
 }
