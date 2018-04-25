@@ -63,10 +63,20 @@ div.content{
 }
 
 div.stuff{
-    
+    background-color: #edeeef;
+    color: black;
+/*    align-items: center;*/
+    position: relative;
+    width: 75%;
+    height: 100%;
+    margin: auto;
 }
 
 span.words{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 2%;
+    padding-right: 2%;
     font-size: 2em;
     margin: auto;
     text-align: center;
