@@ -85,13 +85,37 @@ div.stuff{
 }
 
 /*Contact page css*/
+p#pretext{
+    font-size: 2em;
+    margin: auto;
+    text-align: center;
+    bottom: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
 input#subject{
     line-height: 1;
     width: 60%;
     margin-bottom: 5px;
+    padding 2px;
 }
 
-input#message{
-    line-height: 45;
+div.message-div{
+    align-items: center;
+}
+
+div.message-tag{
+/*    float: left;*/
+    display: inline-block;
+}
+
+textarea#message{
+    display: inline-block;
+    line-height: 20;
     width: 60%;
+    padding: 2px;
+/*    float: left;*/
 }

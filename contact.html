@@ -27,18 +27,21 @@
             <div class="clear"></div>
         </div>
             <div class="stuff">
-                <span class="words">Contact Me Stuff</span>
+                <p id="pretext">
+                    Please, feel free to email me any inquiries whether about the website or side projects!
+                </p>
                 <form action="email.php" method="post" class="words">
-                    <div>
+                    <div class="subject-div">
                         <label for="subject">Subject: </label>
                         <input type="text" id="subject" name="subject">
                     </div>
-                    <div>
-                        <label for="message">Message: </label>
-                        <input type="text" id="message" name="message">
+                    <div class="message-div">
+                        <div class="message-tag">Message: </div>
+                        <textarea id="message" value="message"></textarea>
+                        <div class="clear"></div>
                     </div>
-                    <div>
-                        <input type="submit" value="submit">
+                    <div class="submit-div">
+                        <input type="submit" value="send">
                     </div>
                 </form>
             </div>
