@@ -85,6 +85,13 @@ div.stuff{
 }
 
 /*Contact page css*/
-input.subject{
-    
+input#subject{
+    line-height: 1;
+    width: 60%;
+    margin-bottom: 5px;
+}
+
+input#message{
+    line-height: 45;
+    width: 60%;
 }
