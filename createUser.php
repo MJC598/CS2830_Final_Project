@@ -68,15 +68,14 @@
             $password = sha1($password);
 
             // Build query
-            $query = "INSERT INTO users(username, password, firstName, lastName, email, addDate) VALUES('$username', '$password', $firstName', '$lastName', '$email', now())";
+            $query = "INSERT INTO users(username, password, firstName, lastName, email, addDate) VALUES('$username', '$password', '$firstName', '$lastName', '$email', now());";
 
 //            // Run the query
 //            $mysqliResult = $mysqli->query($query);
 //
 //            // If there was a result...
-            if (mysqli_query($query) != FALSE) {                
+            if (mysqli_query($query)) {                
                 // Close the results
-//                $mysqliResult->close();
                 // Close the DB connection
                 mysqli_close($mysqli);
                 

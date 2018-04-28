@@ -43,7 +43,7 @@
                     <a id="item2" class="nav-bar" href="contact.html">Contact</a>
                     <a id="item3" class="nav-bar" href="resume.html">Resume</a>
                     <a id="item4" class="nav-bar" href="projects.html">Projects</a>
-                    <a id="item5" class="nav-bar" href="login.html">Login</a>
+                    <a id="item5" class="nav-bar" href="login_form.php">Login</a>
                 </nav>
             </div>
             <div class="clear"></div>
@@ -71,16 +71,16 @@
                     </div>
                     <div class="item">
                         <label for="password">Password:</label>
-                        <input type="text" id="password" name="password" required>
+                        <input type="password" id="password" name="password" required>
                     </div>
                     <div class="item">
                         <label for="confirmPass">Confirm Password:</label>
-                        <input type="text" id="confirmPass" name="confirmPass" required>
+                        <input type="password" id="confirmPass" name="confirmPass" required>
                     </div>
                     <div class="item">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" ng-model="text" required>
-                        <span ng-show="mattsForm.email.$error.email">Not a valid e-mail address</span>
+                        <span ng-show="mattsForm.email.$valid">Not a valid e-mail address</span>
                     </div>
                     <div class="item">
                         <input type="submit" value="Submit">

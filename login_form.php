@@ -44,7 +44,7 @@
                     <input type="hidden" name="action" value="do_login">
                     
                     <div class="stack">
-                        <label for="username">User name:</label>
+                        <label for="username">Username:</label>
                         <input type="text" id="username" name="username" class="ui-widget-content ui-corner-all" autofocus value="<?php print $username; ?>">
                     </div>
                     <div class="stack">
@@ -54,6 +54,9 @@
             
                     <div class="stack">
                         <input type="submit" value="Submit">
+                    </div>
+                    <div class="stack">
+                        <a id="create-user-link" href="createUser_form.php">Not a user?</a>
                     </div>
                     
                 </form>

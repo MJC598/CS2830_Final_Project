@@ -1,9 +1,11 @@
 <?php
     $email = "mjc6r9@mail.missouri.edu";
     
-    $msg = real_escape_string($_POST['message']);
+    $msg = $_POST['message'];
 
-    $subject = real_escape_string($_POST['subject']);
+    $subject = $_POST['subject'];
 
     mail($email, $subject, $msg);
+    header("Location: contact.html");
+    exit;
 ?>
