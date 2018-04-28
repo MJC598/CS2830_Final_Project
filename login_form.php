@@ -6,6 +6,8 @@
         <script src="jslibs/jquery3-3-1.js"></script>
         <script src="jslibs/angular1-6-9.js"></script>
         <script src="website.js"></script>
+        <script src="myApp.js"></script>
+        <script src="myController.js"></script>
         <script src="jslibs/jquery-ui.min.js"></script>
         <script>
             $(function(){

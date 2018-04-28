@@ -6,6 +6,8 @@
         <script src="jslibs/jquery3-3-1.js"></script>
         <script src="jslibs/angular1-6-9.js"></script>
         <script src="website.js"></script>
+        <script src="myApp.js"></script>
+        <script src="myController.js"></script>
 <!--        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">-->
         <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -52,8 +54,37 @@
                         print "<div class=\"message\">$error</div>\n";
                     }
                 ?>
-                <form name="nicksForm" action="createUser.php" method="POST" >
+                <form name="mattsForm" action="createUser.php" method="POST" >
                     <input type="hidden" name="action" value="do_create" />
+                    
+                    <div class="item">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="item">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="item">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="item">
+                        <label for="password">Password:</label>
+                        <input type="text" id="password" name="password" required>
+                    </div>
+                    <div class="item">
+                        <label for="confirmPass">Confirm Password:</label>
+                        <input type="text" id="confirmPass" name="confirmPass" required>
+                    </div>
+                    <div class="item">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" ng-model="text" required>
+                        <span ng-show="mattsForm.email.$error.email">Not a valid e-mail address</span>
+                    </div>
+                    <div class="item">
+                        <input type="submit" value="Submit">
+                    </div>
                 </form>
                 
             </div>
