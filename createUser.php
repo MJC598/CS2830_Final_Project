@@ -48,15 +48,25 @@
            // Require the credentials
             require_once 'db.conf';
 
+            $con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+            
+            if(!$con){
+                $error = "Error connecting: " . mysqli_connect_error();
+                require('createUser_form.php');
+                exit;
+            }
+            mysqli_close($con);
+            require_once 'db.conf';
+            
             // Connect to the database
             $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 
-            // Check for errors
-            if ($mysqli->connect_error) {
-                $error = 'Error: ' . $mysqli->connect_errno . ' ' . $mysqli->connect_error;
-                require "login_form.php";
-                exit;
-            }
+//            // Check for errors
+//            if ($mysqli->connect_error) {
+//                $error = 'Error: ' . $mysqli->connect_errno . ' ' . $mysqli->connect_error;
+//                require "login_form.php";
+//                exit;
+//            }
 
             // http://php.net/manual/en/mysqli.real-escape-string.php
             $username = $mysqli->real_escape_string($username);
@@ -74,7 +84,7 @@
 //            $mysqliResult = $mysqli->query($query);
 //
 //            // If there was a result...
-            if (mysqli_query($query)) {                
+            if ($mysqli->query($query) == true) {                
                 // Close the results
                 // Close the DB connection
                 mysqli_close($mysqli);
