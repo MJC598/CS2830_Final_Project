@@ -111,8 +111,8 @@ div.stuff{
 }
 
 .mab-bar{
-    border: 10px solid orange; 
-    border-radius: 100px; 
+/*    border: 10px solid orange; */
+/*    border-radius: 100px; */
     padding: 30px; 
     margin: 50px auto; 
     display: flex;
@@ -127,8 +127,6 @@ iframe#MAB-video{
 }
 
 .mizzou-bar{
-    border: 10px solid orange; 
-    border-radius: 100px; 
     padding: 30px; 
     margin: 50px auto; 
     display: flex;
@@ -141,8 +139,6 @@ iframe#MAB-video{
 }
 
 .animal-bar{
-    border: 10px solid orange; 
-    border-radius: 100px; 
     padding: 30px; 
     margin: 50px auto; 
     display: flex;
@@ -157,6 +153,24 @@ iframe#MAB-video{
 
 /*Resume page css*/
 
+
+/*login_form css*/
+a#create-user-link:link{
+    text-decoration: none;
+    color: #edeeef;
+}
+a#create-user-link:visited{
+    text-decoration: none;
+    color: #edeeef;
+}
+a#create-user-link:hover{
+    text-decoration: none;
+    color: #edeeef;
+}
+a#create-user-link:active{
+    text-decoration: none;
+    color: #edeeef;
+}
 
 /*createUser_form css*/
 div.item{
@@ -182,13 +196,6 @@ input#subject{
     padding 2px;
 }
 
-div.message-div{
-    align-items: center;
-}
-
-div.message-tag{
-    display: inline-block;
-}
 
 textarea#message{
     display: inline-block;

@@ -43,7 +43,7 @@
                     <a id="item2" class="nav-bar" href="aboutMe.html">About Me</a>
                     <a id="item3" class="nav-bar" href="resume.html">Resume</a>
                     <a id="item4" class="nav-bar" href="projects.html">Projects</a>
-                    <a id="item5" class="nav-bar" href="login_form.php">Login</a>
+                    <a id="item5" class="nav-bar" href="login.php">Contact Me</a>
                 </nav>
             </div>
             <div class="clear"></div>
@@ -80,7 +80,6 @@
                     <div class="item">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" ng-model="text" required>
-                        <span ng-show="mattsForm.email.$valid">Not a valid e-mail address</span>
                     </div>
                     <div class="item">
                         <input type="submit" value="Submit">

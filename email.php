@@ -6,6 +6,7 @@
     $subject = $_POST['subject'];
 
     mail($email, $subject, $msg);
-    header("Location: contact.html");
+    $error = "Message sent";
+    require "contact.php";
     exit;
 ?>

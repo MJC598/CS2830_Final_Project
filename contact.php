@@ -1,3 +1,25 @@
+<?php
+
+    // HTTPS redirect
+    if ($_SERVER['HTTPS'] !== 'on') {
+		$redirectURL = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+		header("Location: $redirectURL");
+		exit;
+	}
+    
+	// Every time we want to access $_SESSION, we have to call session_start()
+	if(!session_start()) {
+		header("Location: error.php");
+		exit;
+	}
+	
+	$loggedIn = empty($_SESSION['loggedin']) ? false : $_SESSION['loggedin'];
+	if (!$loggedIn) {
+		header("Location: login.php");
+		exit;
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -23,7 +45,7 @@
                     <a id="item2" class="nav-bar" href="aboutMe.html">About Me</a>
                     <a id="item3" class="nav-bar" href="resume.html">Resume</a>
                     <a id="item4" class="nav-bar" href="projects.html">Projects</a>
-                    <a id="item5" class="nav-bar" href="login_form.php">Login</a>
+                    <a id="item5" class="nav-bar" href="logout.php">Logout</a>
                 </nav>
             </div>
             <div class="clear"></div>
@@ -32,13 +54,18 @@
                 <p id="pretext">
                     Please, feel free to email me any inquiries whether about the website or side projects!
                 </p>
+                <?php
+                if ($error) {
+                    print "<div class=\"ui-state-error\">$error</div>\n";
+                }
+                ?>
                 <form action="email.php" method="post" class="words">
                     <div class="subject-div">
                         <label for="subject">Subject: </label>
                         <input type="text" id="subject" name="subject">
                     </div>
                     <div class="message-div">
-                        <div class="message-tag">Message: </div>
+                        <label class="message-tag">Message: </label>
                         <textarea id="message" value="message"></textarea>
                         <div class="clear"></div>
                     </div>

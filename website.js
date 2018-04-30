@@ -5,6 +5,18 @@ $(document).ready(function(){
 //    $(".footer").css("width", $(window).width());
 });
 
+function doSubmit(){
+    $.get("projects.php", {
+       "name":$("#") 
+    });
+}
+
+
+
+
+
+/*This is all garbage for the nav to work correctly*/
+
 $(document).ready(function(){
    $("#item1").hover(function(){
        $("#item2").css({"color": "#505050", "-webkit-transition": "color 1.0s", "-moz-transition": "color 1.0s", "transition": "color 1.0s"});
