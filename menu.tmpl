@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="nav.css" type="text/css">
+<script src="jslibs/jquery3-3-1.js"></script>
+<script src="jslibs/angular1-6-9.js"></script>
+<script>
+function myFunction() {
+    var x = $("#myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</head>
+<body>
+<div class="topnav">
+<?php
+foreach ($this->menuItems as $menuItem) {
+	$label = $menuItem['label'];
+	$link = $menuItem['link'];
+	$current = "";
+	if ($label == $this->currentPage) {
+		$current = 'class="current"';
+	}
+	print "<a href=\"$link\" title=\"$label\" $current><span>$label</span></a>\n";
+}
+?>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
