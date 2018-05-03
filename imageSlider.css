@@ -1,39 +1,25 @@
-.class{
+/*Design based on w3schools slideshow
+
+https://www.w3schools.com/howto/howto_js_slideshow.asp
+
+*/
+
+.image{
     width: 100%;
 }
 
-.mySlides {
-    display: none;
-}
-
-img{
-    vertical-align: center;
-}
-
-.indicator{
-    text-align: center;
-}
-
-* {box-sizing:border-box}
-
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #3CB371;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
 }
 
 /* Position the "next button" to the right */
@@ -45,6 +31,21 @@ img{
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+}
+
+.indicator{
+    text-align: center;
+}
+
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 15px auto;
 }
 
 /* Caption text */
@@ -69,18 +70,17 @@ img{
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 2px 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active {
+  background-color: #3CB371;
 }
 
 /* Fading animation */
@@ -99,4 +99,9 @@ img{
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }
