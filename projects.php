@@ -18,21 +18,20 @@ $menuHTML = $result['html'];
     <?php 
         print $menuHTML;
     ?>
-    <div class="stuff">
-        <div id="holder">
-            <nav id="project-list">
-                <span id="calc" onclick="getData('calc')">Calculator</span>
-                <span id="scraper" onclick="getData('scraper')">Web Scraper</span>
-                <span id="cards" onclick="getData('cards')">Flashcards</span>
-                <span id="data-structs" onclick="getData('data')">Data Structures</span>
-            </nav>
-            <div id="description">
-                My Java CS3330 Final Project was a Chemistry Conversion Calculator created so my roomates could make calculations quicker and waste less time trying to figure out simple conversions.
-            </div>
+    <div class="projects">
+        <span class="title">Computer Science:</span><br />
+        <nav id="project-list">
+            <button type="button" id="calc" onclick="getData('calc')">Calculator</button>
+            <button type="button" id="scraper" onclick="getData('scraper')">Web Scraper</button>
+            <button type="button" id="cards" onclick="getData('cards')">Flashcards</button>
+            <button type="button" id="data-structs" onclick="getData('data')">Data Structures</button>
+        </nav>
+        <div id="description">
+            I started working on this for my Java OOP development class at Mizzou. The idea was to create a conversion calculator for my chemical engineering friends to make their lives easier. I still need to go back and refactor the project and make a couple adjustments before I give it to them, but this is how I turned it in for the grade in the class.
         </div>
-        <div id="project">
-            <iframe id="project-holder" width="100%" height="100%"></object>
-        </div>
+        <a id="project-holder" href="https://github.com/MJC598/OOP-Design/tree/master/Final_Project">click me to go to the github repo</a><br /><br />
+        <span class="title">Service:</span><br />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ju8yvIkrdB4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
     </body>
 </html>

@@ -1,6 +1,9 @@
 function getData(query){
-    $.getJSON("project_responder.php", {"query": query}, function(data){
+    $("#description").html("Loading...");
+    $("#project-holder").attr("src", "index.php");
+    $.getJSON("project_responder.php", {"info": query}, function(data){
         $("#description").html(data.description);
-        $("#project-holder").attr("src", data.iframe);
+        $("#project-holder").attr("href", data.link);
     });
 }
+
