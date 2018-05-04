@@ -12,11 +12,11 @@
 ### Project Requirements:
 ---------------------------
 1.	The 5 required tags are used on index.php 
-    ..a.	```<!DOCTYPE html>``` (line 12)
-    ..b.	```<html>```(line 13 and closes on line 27)
-    ..c.	```<head>```(line 14 and closes in menu.tmpl)
-    ..d.	```<title>```(line 16)
-    ..e.	```<body>```(starts in menu.tmpl and closes on line 26)
+    a.	```<!DOCTYPE html>``` (line 12)
+    b.	```<html>```(line 13 and closes on line 27)
+    c.	```<head>```(line 14 and closes in menu.tmpl)
+    d.	```<title>```(line 16)
+    e.	```<body>```(starts in menu.tmpl and closes on line 26)
 
 2.	All landing pages (index.php, aboutMe.php, projects.php, contact.php, login_form.php, and createUser_form.php) are composed of a navbar template (menu.tmpl) forcing them to have consistent design.
 
@@ -25,8 +25,8 @@
 4.	Before logging in, the pages that can be accessed are index.php, aboutMe.php, and projects.php. After logging in contact.php becomes accessible and the navbar changes so that the login says logout giving a visual cue to the user.
 
 5.	Create user form is available in addition to the below username and password
-    ..a.	Username: test
-    ..b.	Password: pass
+    a.	Username: test
+    b.	Password: pass
 
 6.	PHP is all over the place, open any file with a .php extension and you will see PHP code.
 
