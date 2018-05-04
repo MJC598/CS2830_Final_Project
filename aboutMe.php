@@ -22,6 +22,7 @@ $menuHTML = $result['html'];
 <?php 
     print $menuHTML;
     print $sliderHTML;
-?>    
+?>
+    <img src="pictures/me.jpg" alt="This is me" />
 </body>
 </html>
