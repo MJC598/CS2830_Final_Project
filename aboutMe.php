@@ -23,6 +23,9 @@ $menuHTML = $result['html'];
     print $menuHTML;
     print $sliderHTML;
 ?>
-    <img src="pictures/me.jpg" alt="This is me" />
+    <br><br><br>
+    <div class="picture-supertext">By the way, this is a picture of me.</div>
+    <br><br>
+    <img id="pic-of-me" src="pictures/me.jpg" alt="This is me" />
 </body>
 </html>
