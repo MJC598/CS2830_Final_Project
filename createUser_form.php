@@ -15,6 +15,9 @@ $menuHTML = $result['html'];
     <head>
         <meta charset="utf-8" />
         <title>Welcome</title>
+        <link rel="stylesheet" type="text/css" href="login.css" />
+        <script src="jslibs/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <script src="jslibs/jquery3-3-1.js"></script>
         <script>
         $(function(){
             $("input[type=submit]").button();	
@@ -39,42 +42,36 @@ $menuHTML = $result['html'];
         print $menuHTML;
     ?>
     <div class="stuff">
-    <?php
-        if ($error) {
-            print "<div class=\"message\">$error</div>\n";
-        }
-    ?>
-    <form name="mattsForm" action="createUser.php" method="POST" >
-        <input type="hidden" name="action" value="do_create" />
+        <form name="mattsForm" action="createUser.php" method="POST" >
+            <input type="hidden" name="action" value="do_create" />
+            <div class="container">
+            <?php
+                if ($error) {
+                    print "<div class=\"error\">$error</div>\n";
+                }
+            ?>
     
-        <div class="item">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
+                <label for="firstName">First Name:</label><br />
+                <input type="text" id="firstName" name="firstName" required><br />
+
+                <label for="lastName">Last Name:</label><br />
+                <input type="text" id="lastName" name="lastName" required><br />
+
+                <label for="username">Username:</label><br />
+                <input type="text" id="username" name="username" required><br />
+
+                <label for="password">Password:</label><br />
+                <input type="password" id="password" name="password" required><br />
+
+                <label for="confirmPass">Confirm Password:</label><br />
+                <input type="password" id="confirmPass" name="confirmPass" required><br />
+
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" name="email" ng-model="text" required><br />
+
+                <input type="submit" value="Submit">
             </div>
-        <div class="item">
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required>
-        </div>
-        <div class="item">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-        </div>
-        <div class="item">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <div class="item">
-            <label for="confirmPass">Confirm Password:</label>
-            <input type="password" id="confirmPass" name="confirmPass" required>
-        </div>
-        <div class="item">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" ng-model="text" required>
-        </div>
-        <div class="item">
-            <input type="submit" value="Submit">
-        </div>
-    </form>
+        </form>
     </div>
     </body>
 </html>

@@ -1,16 +1,5 @@
 <?php
-    //This was a mess from class so I fixed it to work for my final project
-
-	// Here we are using sessions to propagate the login
-	// http://us3.php.net/manual/en/intro.session.php
-
-    // HTTPS redirect
-//    if ($_SERVER['HTTPS'] !== 'on') {
-//		$redirectURL = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-//		header("Location: $redirectURL");
-//		exit;
-//	}
-	
+    
 	// http://us3.php.net/manual/en/function.session-start.php
 	if(!session_start()) {
 		// If the session couldn't start, present an error
@@ -61,13 +50,6 @@
             // Connect to the database
             $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 
-//            // Check for errors
-//            if ($mysqli->connect_error) {
-//                $error = 'Error: ' . $mysqli->connect_errno . ' ' . $mysqli->connect_error;
-//                require "login_form.php";
-//                exit;
-//            }
-
             // http://php.net/manual/en/mysqli.real-escape-string.php
             $username = $mysqli->real_escape_string($username);
             $password = $mysqli->real_escape_string($password);
@@ -96,7 +78,7 @@
                 exit;
             }
             else{
-                $error = "Insert error: " . $query . "<br>" . $mysqli->error;
+                $error = "Error: " . $mysqli->error;
                 require "createUser_form.php";
                 exit;
             }

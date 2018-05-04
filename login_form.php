@@ -15,6 +15,9 @@ $menuHTML = $result['html'];
     <head>
         <meta charset="utf-8" />
         <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="login.css" />
+        <script src="jslibs/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <script src="jslibs/jquery3-3-1.js"></script>
         <script>
             $(function(){
                 $("input[type=submit]").button();
@@ -24,28 +27,25 @@ $menuHTML = $result['html'];
         print $menuHTML;
     ?>
     <div class="content">
-    <?php
-        if ($error) {
-            print "<div class=\"ui-state-error\">$error</div>\n";
-        }
-    ?>
-    <form action="login.php" method="post">
-        <input type="hidden" name="action" value="do_login">
-        <div class="stack">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" class="ui-widget-content ui-corner-all" autofocus value="<?php print $username; ?>">
-        </div>
-        <div class="stack">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" class="ui-widget-content ui-corner-all">
-        </div>
-        <div class="stack">
-            <input type="submit" value="Submit">
-        </div>
-        <div class="stack">
-            <a id="create-user-link" href="createUser_form.php">Not a user?</a>
-        </div>
-    </form>
+        <form action="login.php" method="post">
+            <input type="hidden" name="action" value="do_login">
+            <div id="login-container">
+            <?php
+                if ($error) {
+                    print "<div class=\"error\">$error</div>\n";
+                }
+            ?>
+    
+                <label for="username">Username:</label><br />
+                <input type="text" placeholder="Enter Username" name="username" value="<?php print $username; ?>"><br />
+            
+                <label for="password">Password:</label><br />
+                <input type="password" placeholder="Enter Password" name="password"><br />
+
+                <input type="submit" value="Login"><br />
+                <a id="new-user-link" href="createUser_form.php">Not a user?</a>
+            </div>
+        </form>
     </div>
     </body>
 </html>
