@@ -71,6 +71,7 @@
         if ($mysqliResult) {
             // How many records were returned?
             $match = $mysqliResult->num_rows;
+            $id = $mysqliResult;
 
             // Close the results
             $mysqliResult->close();
@@ -81,6 +82,7 @@
             // If there was a match, login
   		    if ($match == 1) {
                 $_SESSION['loggedin'] = $username;
+                $_SESSION['id'] = $id;
                 header("Location: contact.php");
                 exit;
             }

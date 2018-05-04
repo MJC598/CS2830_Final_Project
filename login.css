@@ -35,3 +35,13 @@ input[type=submit]:hover{
     text-decoration: none;
     color: white;
 }
+
+textarea#message{
+    width: 75%%;
+    padding: 15px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #3CB371;
+    box-sizing: border-box;
+    height: 75%;
+}

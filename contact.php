@@ -36,6 +36,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Contact Me</title>
+        <link rel="stylesheet" type="text/css" href="login.css" />
     <?php 
         print $menuHTML;
     ?>
@@ -49,16 +50,13 @@
             }
         ?>
         <form action="email.php" method="post" class="words">
-            <div class="subject-div">
-                <label for="subject">Subject: </label>
-                <input type="text" id="subject" name="subject">
-            </div>
-            <div class="message-div">
-                <label class="message-tag">Message: </label>
-                <textarea id="message" value="message"></textarea>
-                <div class="clear"></div>
-            </div>
-            <div class="submit-div">
+            <div class="container">
+                <label for="subject">Subject: </label><br />
+                <input type="text" name="subject"><br />
+
+                <label class="message-tag">Message: </label><br />
+                <textarea id="message" value="message"></textarea><br />
+
                 <input type="submit" value="send">
             </div>
         </form>

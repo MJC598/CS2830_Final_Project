@@ -17,5 +17,11 @@ $menuHTML = $result['html'];
 <?php 
     print $menuHTML;
 ?>
+    <p class="words">
+        <b>Welcome to my Webpage!</b>
+    </p><br />
+    <p class="words" id="HFquote">
+        "Whether you think you can, <br> or think you can't--you're right".<br>- Henry Ford
+    </p>
 </body>
 </html>
