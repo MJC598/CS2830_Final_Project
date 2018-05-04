@@ -9,6 +9,25 @@ p.words{
     font-size: 24px;
 }
 
+.projects{
+    text-align: center;
+}
+
+.title{
+    font-size: 32px;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+
+#description{
+    
+}
+
+.project-description{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #calc{
     
 }
@@ -23,4 +42,31 @@ p.words{
 
 #data-structs{
     
+}
+
+#project-holder{
+    text-decoration: none;
+    color: white;
+}
+
+#project-holder:hover{
+    font-weight: bold;
+}
+
+button{
+    background-color: #3CB371;
+    width: 10%;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+
+button:hover{
+    opacity: 0.6;
+}
+
+#calc, #scraper, #sensors{
+    margin-right: 3%;
 }
