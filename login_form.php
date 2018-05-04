@@ -15,8 +15,6 @@ $menuHTML = $result['html'];
     <head>
         <meta charset="utf-8" />
         <title>Login</title>
-        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <script>
             $(function(){
                 $("input[type=submit]").button();
